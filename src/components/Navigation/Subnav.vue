@@ -14,10 +14,10 @@
 <script>
 export default {
   name: "Subnav",
-  data() {
-    return {
-      obJobResultPage: true,
-    };
+  computed: {
+    obJobResultPage() {
+      return this.$route.name === "JobResults";
+    },
   },
 };
 </script>
