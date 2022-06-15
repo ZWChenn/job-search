@@ -3,6 +3,7 @@
     <router-link
       :to="jobPageLink"
       class="block mx-auto bg-white border border-solid rounded border-brand-gray-2 hover:shadow-gray"
+      data-test="job-page-link"
     >
       <div class="pt-5 pb-2 mx-8 border-b border-solid border-brand-gray-2">
         <h2 class="mb-2 text-2xl">
