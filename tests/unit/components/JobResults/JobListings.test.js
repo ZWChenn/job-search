@@ -56,4 +56,21 @@ describe("JobListings", () => {
       expect(wrapper.text()).toMatch("Page 3");
     });
   });
+  describe("when user is on first page of job results", () => {
+    it("does not show link to previous page", () => {
+      const queryParams = { page: "1" };
+      const $route = createRoute(queryParams);
+      const wrapper = shallowMount(JobListings, createConfig($route));
+      const previousPage = wrapper.find("[data-test='previous-page-link']");
+      expect(previousPage.exists()).toBe(false);
+    });
+    fit("shows link to next page", async () => {
+      const queryParams = { page: "1" };
+      const $route = createRoute(queryParams);
+      const wrapper = shallowMount(JobListings, createConfig($route));
+      await flushPromises();
+      const nextPage = wrapper.find("[data-test='next-page-link']");
+      expect(nextPage.exists()).toBe(true);
+    });
+  });
 });
