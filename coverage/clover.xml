@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655539405182" clover="3.2.0">
-  <project timestamp="1655539405182" name="All files">
+<coverage generated="1655542928783" clover="3.2.0">
+  <project timestamp="1655542928783" name="All files">
     <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="9" elements="30" coveredelements="30" complexity="0" loc="21" ncloc="21" packages="5" files="7" classes="7"/>
     <package name="components.JobResults">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -28,7 +28,7 @@
       <file name="ActionButton.vue" path="C:\Users\Josh\Desktop\job-search\src\components\Shared\ActionButton.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="7" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
       </file>
       <file name="TextInput.vue" path="C:\Users\Josh\Desktop\job-search\src\components\Shared\TextInput.vue">
