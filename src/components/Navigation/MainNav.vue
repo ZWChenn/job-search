@@ -33,7 +33,7 @@
             text="Sign in"
             type="primary"
             data-test="login-button"
-            @click="loginUser"
+            @click="LOGIN_USER"
           />
         </div>
       </div>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapMutations, mapState } from "vuex";
 import ActionButton from "@/components/Shared/ActionButton.vue";
 import ProfileImage from "@/components/Navigation/ProfileImage.vue";
 import Subnav from "@/components/Navigation/Subnav.vue";
@@ -74,24 +74,13 @@ export default {
         "h-32": this.isLoggedIn,
       };
     },
-    // isLoggedIn() {
-    //   return this.$store.state.isLoggedIn;
-    // },
-    // 把mapState解構出來
-    // ...mapState({
-    // 屬性名isLoggedIn可以自訂，但通常取狀態同名
-    // 寫法一
-    // isLoggedIn: (state) => state.isLoggedIn,
-    // 寫法二
-    // isLoggedIn: "isLoggedIn",
-    // }),
-    // 寫法三
     ...mapState(["isLoggedIn"]),
   },
   methods: {
-    loginUser() {
-      this.$store.commit(LOGIN_USER);
-    },
+    // LOGIN_USER() {
+    //   this.$store.commit(LOGIN_USER);
+    // },
+    ...mapMutations([LOGIN_USER]),
   },
 };
 </script>
