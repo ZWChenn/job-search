@@ -33,7 +33,7 @@
             text="Sign in"
             type="primary"
             data-test="login-button"
-            @click="LOGIN_USER"
+            @click="LOGIN_USER()"
           />
         </div>
       </div>
