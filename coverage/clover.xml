@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655874538071" clover="3.2.0">
-  <project timestamp="1655874538072" name="All files">
-    <metrics statements="36" coveredstatements="36" conditionals="2" coveredconditionals="2" methods="15" coveredmethods="15" elements="53" coveredelements="53" complexity="0" loc="36" ncloc="36" packages="6" files="9" classes="9"/>
+<coverage generated="1655948298268" clover="3.2.0">
+  <project timestamp="1655948298268" name="All files">
+    <metrics statements="37" coveredstatements="37" conditionals="2" coveredconditionals="2" methods="15" coveredmethods="15" elements="54" coveredelements="54" complexity="0" loc="37" ncloc="37" packages="6" files="10" classes="10"/>
     <package name="api">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="getJobs.js" path="C:\Users\Josh\Desktop\job-search\src\api\getJobs.js">
@@ -34,7 +34,7 @@
       </file>
     </package>
     <package name="components.Shared">
-      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
       <file name="Accordion.vue" path="C:\Users\Josh\Desktop\job-search\src\components\Shared\Accordion.vue">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="19" count="1" type="stmt"/>
@@ -47,6 +47,10 @@
         <line num="7" count="3" type="stmt"/>
         <line num="19" count="7" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
+      </file>
+      <file name="HeaderContainer.vue" path="C:\Users\Josh\Desktop\job-search\src\components\Shared\HeaderContainer.vue">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="1" type="stmt"/>
       </file>
       <file name="TextInput.vue" path="C:\Users\Josh\Desktop\job-search\src\components\Shared\TextInput.vue">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
