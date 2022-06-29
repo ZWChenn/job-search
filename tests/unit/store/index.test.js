@@ -1,4 +1,4 @@
-import { state, mutations, actions } from "@/store";
+import { actions, getters, mutations, state } from "@/store";
 import getJobs from "@/api/getJobs";
 jest.mock("@/api/getJobs");
 
@@ -29,6 +29,23 @@ describe("mutations", () => {
     });
   });
 });
+
+describe("getters", () => {
+  describe("UNIQUE_ORGANIZATIONS", () => {
+    it("finds unique organizations from list of jobs", () => {
+      const state = {
+        jobs: [
+          { organization: "Google" },
+          { organization: "Amazon" },
+          { organization: "Google" },
+        ],
+      };
+      const result = getters.UNIQUE_ORGANIZATIONS(state);
+      expect(result).toEqual(new Set(["Google", "Amazon"]));
+    });
+  });
+});
+
 describe("actions", () => {
   describe("FETCH_JOBS", () => {
     beforeEach(() => {
