@@ -9,7 +9,9 @@
             class="w-1/2 h-8"
           >
             <input :id="organization" type="checkbox" class="mr-3" />
-            <labe :for="organization">{{ organization }}</labe>
+            <labe :for="organization" data-test="organization">{{
+              organization
+            }}</labe>
           </li>
         </ul>
       </fieldset>
