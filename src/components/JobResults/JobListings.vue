@@ -33,7 +33,7 @@
 </template>
 <script>
 import { mapActions, mapGetters } from "vuex";
-import { FETCH_JOBS, FILTERED_JOBS_BY_ORGANIZATIONS } from "@/store";
+import { FETCH_JOBS, FILTERED_JOBS_BY_ORGANIZATIONS } from "@/store/constants";
 import JobListing from "@/components/JobResults/JobListing.vue";
 export default {
   name: "JobListings",
